@@ -2,13 +2,140 @@ import { INavData } from '@coreui/angular';
 
 export const navItems: INavData[] = [
   {
-    name: 'Dashboard',
+    name: 'Thống kê',
     url: '/dashboard',
     iconComponent: { name: 'cil-speedometer' },
-    badge: {
-      color: 'info',
-      text: 'NEW'
-    }
+  },
+  {
+    title: true,
+    name: 'Chức năng'
+  },
+  {
+    name: 'Quản lý người dùng',
+    url: '/user',
+    iconComponent: { name: 'cil-user' },
+    children: [
+      {
+        name: 'Danh sách',
+        url: '/user/list'
+      },
+      {
+        name: 'Tạo người dùng',
+        url: '/user/create'
+      },
+    ]
+  },
+  {
+    name: 'Quản lý danh mục',
+    url: '/categories',
+    iconComponent: { name: 'cil-tags' },
+    children: [
+      {
+        name: 'Danh sách',
+        url: '/categories/list'
+      },
+      {
+        name: 'Tạo danh mục',
+        url: '/categories/create'
+      },
+    ]
+  },
+  {
+    name: 'Quản lý nhà đồng hành',
+    url: '/sponsor',
+    iconComponent: { name: 'cil-group' },
+    children: [
+      {
+        name: 'Danh sách',
+        url: '/sponsor/list'
+      },
+      {
+        name: 'Tạo nhà đồng hành',
+        url: '/sponsor/create'
+      },
+    ]
+  },
+  {
+    name: 'Quản lý chiến dịch',
+    url: '/campaign',
+    iconComponent: { name: 'cil-fire' },
+    children: [
+      {
+        name: 'Danh sách',
+        url: '/campaign/list'
+      },
+      {
+        name: 'Tạo chiến dịch',
+        url: '/campaign/create'
+      },
+    ]
+  },
+  {
+    name: 'Quản lý bài viết',
+    url: '/article',
+    iconComponent: { name: 'cil-description' },
+    children: [
+      {
+        name: 'Danh sách',
+        url: '/article/list'
+      },
+      {
+        name: 'Tạo bài viết',
+        url: '/article/create'
+      },
+    ]
+  },
+  {
+    name: 'Quản lý bình luận',
+    url: '/comment',
+    iconComponent: { name: 'cil-comment-bubble' },
+    children: [
+      {
+        name: 'Danh sách',
+        url: '/comment/list'
+      },
+    ]
+  },
+  {
+    name: 'Quản lý FAQ',
+    url: '/faq',
+    iconComponent: { name: 'cil-chat-bubble' },
+    children: [
+      {
+        name: 'Danh sách',
+        url: '/faq/list'
+      },
+      {
+        name: 'Tạo người dùng',
+        url: '/faq/create'
+      },
+    ]
+  },
+  {
+    name: 'Quản lý kênh thanh toán',
+    url: '/payment-channel',
+    iconComponent: { name: 'cil-dollar' },
+    children: [
+      {
+        name: 'Danh sách',
+        url: '/payment-channel/list'
+      },
+      {
+        name: 'Tạo kênh thanh toán',
+        url: '/payment-channel/create'
+      },
+    ]
+  },
+  {
+    name: 'Lịch sử giao dịch',
+    url: '/transaction',
+    iconComponent: { name: 'cil-print' },
+    children: [
+      {
+        name: 'Danh sách',
+        url: '/transaction/list'
+      },
+    ]
   },
   {
     title: true,
