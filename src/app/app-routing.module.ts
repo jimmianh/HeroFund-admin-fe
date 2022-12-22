@@ -6,6 +6,7 @@ import { Page404Component } from './views/pages/page404/page404.component';
 import { Page500Component } from './views/pages/page500/page500.component';
 import { LoginComponent } from './views/pages/login/login.component';
 import { RegisterComponent } from './views/pages/register/register.component';
+import {ArticleManagementModule} from "./main/article-management/article-management.module";
 
 const routes: Routes = [
   {
@@ -69,6 +70,51 @@ const routes: Routes = [
         path: 'pages',
         loadChildren: () =>
           import('./views/pages/pages.module').then((m) => m.PagesModule)
+      },
+      {
+        path: 'article',
+        loadChildren: () =>
+          import('./main/article-management/article-management.module').then((m) => m.ArticleManagementModule)
+      },
+      {
+        path: 'campaign',
+        loadChildren: () =>
+          import('./main/campaign-management/campaign-management.module').then((m) => m.CampaignManagementModule)
+      },
+      {
+        path: 'categories',
+        loadChildren: () =>
+          import('./main/categories-management/categories-management.module').then((m) => m.CategoriesManagementModule)
+      },
+      {
+        path: 'comment',
+        loadChildren: () =>
+          import('./main/comment-management/comment-management.module').then((m) => m.CommentManagementModule)
+      },
+      {
+        path: 'faq',
+        loadChildren: () =>
+          import('./main/faq-management/faq-management.module').then((m) => m.FAQManagementModule)
+      },
+      {
+        path: 'payment-channel',
+        loadChildren: () =>
+          import('./main/payment-channel-management/payment-channel-management.module').then((m) => m.PaymentChannelManagementModule)
+      },
+      {
+        path: 'sponsor',
+        loadChildren: () =>
+          import('./main/sponsor-management/sponsor-management.module').then((m) => m.SponsorManagementModule)
+      },
+      {
+        path: 'transaction',
+        loadChildren: () =>
+          import('./main/transaction-management/transaction-management.module').then((m) => m.TransactionManagementModule)
+      },
+      {
+        path: 'user',
+        loadChildren: () =>
+          import('./main/user-management/user-management.module').then((m) => m.UserManagementModule)
       },
     ]
   },
