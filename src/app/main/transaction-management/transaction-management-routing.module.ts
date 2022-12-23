@@ -14,14 +14,14 @@ const routes: Routes = [
         path: 'list',
         component: TransactionManagementPageComponent,
         data: {
-          title: 'Danh sách các kênh thanh toán'
+          title: 'Danh sách lịch sử giao dịch'
         }
       },
       {
         path: 'view/:id',
         component: TransactionManagementDetailComponent,
         data: {
-          title: 'Xem kênh thanh toán'
+          title: 'Xem chi tiết'
         }
       },
     ]
