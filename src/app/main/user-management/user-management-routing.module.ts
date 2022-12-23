@@ -2,8 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {UserManagementPageComponent} from "./user-management-page/user-management-page.component";
 import {UserManagementFormComponent} from "./user-management-form/user-management-form.component";
-import {RangesComponent} from "../../views/forms/ranges/ranges.component";
-
 const routes: Routes = [
   {
     path: '',
@@ -22,21 +20,21 @@ const routes: Routes = [
         path: 'create',
         component: UserManagementFormComponent,
         data: {
-          title: 'Tạo kênh thanh toán'
+          title: 'Tạo người dùng mới'
         }
       },
       {
         path: 'view/:id',
         component: UserManagementFormComponent,
         data: {
-          title: 'Xem kênh thanh toán'
+          title: 'Xem thông tin chi tiết'
         }
       },
       {
         path: 'edit/:id',
         component: UserManagementFormComponent,
         data: {
-          title: 'Chỉnh sửa kênh thanh toán'
+          title: 'Chỉnh sửa thông tin'
         }
       },
     ]
