@@ -8,5 +8,5 @@ import { cilPenAlt, cilSpreadsheet, cilTrash} from "@coreui/icons";
   styleUrls: ['./user-management-page.component.scss']
 })
 export class UserManagementPageComponent {
-  icons = { cilSpreadsheet, cilPenAlt, cilTrash };
+  icons = { cilSpreadsheet, cilPenAlt, cilTrash, };
 }
