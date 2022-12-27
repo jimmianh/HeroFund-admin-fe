@@ -21,14 +21,14 @@
     routerLink="./"
   >
   </c-sidebar-brand>
-    <perfect-scrollbar [config]="perfectScrollbarConfig">
-  <!--  [perfectScrollbar]="perfectScrollbarConfig"-->
-  <c-sidebar-nav
-    [navItems]="navItems"
-    dropdownMode="close"
-  >
-  </c-sidebar-nav>
-    </perfect-scrollbar>
+  <perfect-scrollbar [config]="perfectScrollbarConfig">
+    <!--  [perfectScrollbar]="perfectScrollbarConfig"-->
+    <c-sidebar-nav
+      [navItems]="navItems"
+      dropdownMode="close"
+    >
+    </c-sidebar-nav>
+  </perfect-scrollbar>
   <c-sidebar-toggler
     *ngIf="!sidebar.narrow"
     toggle="unfoldable"
@@ -42,7 +42,7 @@
   <app-default-header class="mb-4 d-print-none header header-sticky" position="sticky" sidebarId="sidebar"></app-default-header>
   <!--app-body-->
   <div class="body flex-grow-1 px-3">
-    <c-container breakpoint="lg" class="h-auto">
+    <c-container breakpoint="lg" class="h-auto" style="max-width: 2002px;">
       <router-outlet></router-outlet>
     </c-container>
   </div>
