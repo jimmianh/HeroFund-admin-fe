@@ -8,24 +8,26 @@
           cForm
           class="row g-3 needs-validation"
         >
-          <c-col class="position-relative" md="4">
+
+            <img cImg class="avatar"  src="assets/img/avatars/1.jpg" width="200" />
+          <c-col class="position-relative" md="9">
             <label cLabel for="validationTooltip01">First name</label>
             <input cFormControl id="validationTooltip01" required type="text" value="Mark" />
             <c-form-feedback [valid]="true" tooltip>Looks good!</c-form-feedback>
           </c-col>
-          <c-col class="position-relative" md="4">
+          <c-col class="position-relative" md="8">
             <label cLabel for="validationTooltip02">Last name</label>
             <input cFormControl id="validationTooltip02" required type="text" value="Otto" />
             <c-form-feedback [valid]="true" tooltip>Looks good!</c-form-feedback>
           </c-col>
-          <c-col class="position-relative" md="4">
-            <label cLabel for="validationTooltip02">Avatar</label>
-            <input cFormControl id="" required type="text" value="Otto" />
-            <c-form-feedback [valid]="true" tooltip>Looks good!</c-form-feedback>
-          </c-col>
+<!--          <c-col class="position-relative" md="4">-->
+<!--            <label cLabel for="validationTooltip02">Avatar</label>-->
+<!--            <input cFormControl id="" required type="text" value="Otto" />-->
+<!--            <c-form-feedback [valid]="true" tooltip>Looks good!</c-form-feedback>-->
+<!--          </c-col>-->
 
-          <c-col class="position-relative" md="4">
-            <label cLabel for="validationTooltipUsername">Username</label>
+          <c-col class="position-relative" md="8">
+            <label cLabel for="validationTooltipUsername">Tên người dùng</label>
             <c-input-group class="has-validation">
               <span cInputGroupText id="inputGroupPrependTooltip">@</span>
               <input aria-describedby="inputGroupPrependTooltip"
@@ -38,12 +40,17 @@
             </c-input-group>
           </c-col>
           <c-col class="position-relative" md="6">
-            <label cLabel for="validationTooltip03">City</label>
+            <label cLabel for="validationTooltip03">Ngày sinh</label>
             <input cFormControl id="validationTooltip03" required type="text" />
-            <c-form-feedback [valid]="false" tooltip>Please provide a valid city.</c-form-feedback>
+            <c-form-feedback [valid]="false" tooltip>Vui lòng nhập ngày sinh.</c-form-feedback>
           </c-col>
           <c-col class="position-relative" md="6">
-            <label cLabel for="validationTooltip04">State</label>
+            <label cLabel for="validationTooltip03">Số điện thoại</label>
+            <input cFormControl required type="text" />
+            <c-form-feedback [valid]="false" tooltip>Vui lòng số diện thoại.</c-form-feedback>
+          </c-col>
+          <c-col class="position-relative" md="12">
+            <label cLabel for="validationTooltip04">Địa chỉ</label>
             <select cSelect id="validationTooltip04" required>
               <option value="">Choose...</option>
               <option value="1">...</option>
