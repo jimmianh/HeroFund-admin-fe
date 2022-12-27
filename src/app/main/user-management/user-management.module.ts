@@ -4,25 +4,37 @@ import { CommonModule } from '@angular/common';
 import { UserManagementRoutingModule } from './user-management-routing.module';
 import { UserManagementPageComponent } from './user-management-page/user-management-page.component';
 import { UserManagementFormComponent } from './user-management-form/user-management-form.component';
-import {NzTableModule} from "ng-zorro-antd/table";
-import {NzButtonModule} from "ng-zorro-antd/button";
+import {
+  ButtonModule,
+  CardModule,
+  FormModule,
+  GridModule,
+  ImgModule,
+  TableModule,
+  UtilitiesModule
+} from "@coreui/angular";
 import {DocsComponentsModule} from "../../../components";
-import {CardModule, GridModule, TableModule} from "@coreui/angular";
+import {IconModule} from "@coreui/icons-angular";
+
 
 @NgModule({
   declarations: [
     UserManagementPageComponent,
     UserManagementFormComponent,
+
   ],
   imports: [
     CommonModule,
     UserManagementRoutingModule,
-    NzTableModule,
-    NzButtonModule,
+    UtilitiesModule,
     DocsComponentsModule,
     TableModule,
-    CardModule,
     GridModule,
+    CardModule,
+    IconModule,
+    FormModule,
+    ButtonModule,
+    ImgModule,
   ]
 })
 export class UserManagementModule { }

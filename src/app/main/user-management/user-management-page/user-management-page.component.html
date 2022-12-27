@@ -1,26 +1,34 @@
-<nz-table #rowSelectionTable [striped]="true" cTable class="col-12"
-[nzData]="listOfData"
->
-  <thead>
-  <tr>
-    <th scope="col">STT</th>
-    <th scope="col">Tên người dùng</th>
-    <th scope="col">Địa chỉ</th>
-    <th scope="col">Email</th>
-    <th scope="col">Thao tác</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr *ngFor="let data of rowSelectionTable.data">
-    <th scope="row"></th>
-    <td>{{ data.name }}</td>
-    <td>Otto</td>
-    <td>@mdo</td>
-    <td>
-      <a href="" scope="col" class="" style="margin-right: 10px">xóa</a>
-      <a href="" scope="col" style="margin-right: 10px">a</a>
-      <a href="" scope="col">f</a>
-    </td>
-  </tr>
-  </tbody>
-</nz-table>
+<c-row ngPreserveWhitespaces>
+  <c-col xs="12">
+    <c-card class="mb-4">
+      <c-card-body>
+        <table [hover]="true" cTable>
+          <thead>
+          <tr>
+            <th scope="col" style="text-align: center">STT</th>
+            <th scope="col" style="text-align: center">Tên người dùng</th>
+            <th scope="col" style="text-align: center">Số điện thoại</th>
+            <th scope="col" style="text-align: center">Email</th>
+            <th scope="col" style="text-align: center">Trạng thái</th>
+            <th scope="col" style="text-align: center">Thao tác</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <th scope="row" style="text-align: center">1</th>
+            <td style="text-align: center">Mark</td>
+            <td style="text-align: center">09870705759</td>
+            <td style="text-align: center">Anhvhn@fpt.com.vn</td>
+            <td style="text-align: center">Hoạt động</td>
+            <td style="text-align: center">
+              <button class="btn"><svg [cIcon]="icons.cilSpreadsheet" width="15" title="List Icon"></svg></button>
+              <button class="btn"><svg [cIcon]="icons.cilPenAlt" width="15" title="Shield Icon"></svg></button>
+              <button class="btn"><svg [cIcon]="icons.cilTrash" width="15" title="Shield Icon"></svg></button>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </c-card-body>
+    </c-card>
+  </c-col>
+</c-row>
