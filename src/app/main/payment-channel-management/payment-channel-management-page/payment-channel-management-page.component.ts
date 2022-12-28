@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {cilPenAlt, cilSpreadsheet, cilTrash} from "@coreui/icons";
 
 @Component({
   selector: 'app-payment-channel-management-page',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./payment-channel-management-page.component.scss']
 })
 export class PaymentChannelManagementPageComponent {
-
+  icons = { cilSpreadsheet, cilPenAlt, cilTrash, };
 }

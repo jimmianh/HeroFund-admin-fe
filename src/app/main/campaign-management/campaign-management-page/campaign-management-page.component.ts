@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {cilPenAlt, cilSpreadsheet, cilTrash} from "@coreui/icons";
 
 @Component({
   selector: 'app-campaign-management-page',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./campaign-management-page.component.scss']
 })
 export class CampaignManagementPageComponent {
-
+  icons = { cilSpreadsheet, cilPenAlt, cilTrash, };
 }

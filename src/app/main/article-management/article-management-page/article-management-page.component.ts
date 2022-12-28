@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {cilPenAlt, cilSpreadsheet, cilTrash} from "@coreui/icons";
 
 @Component({
   selector: 'app-article-management-page',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./article-management-page.component.scss']
 })
 export class ArticleManagementPageComponent {
-
+  icons = { cilSpreadsheet, cilPenAlt, cilTrash, };
 }

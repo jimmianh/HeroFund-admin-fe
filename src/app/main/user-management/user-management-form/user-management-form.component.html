@@ -8,45 +8,44 @@
           cForm
           class="row g-3 needs-validation"
         >
-
-            <img cImg class="avatar"  src="assets/img/avatars/1.jpg" width="200" />
-          <c-col class="position-relative" md="9">
-            <label cLabel for="validationTooltip01">First name</label>
-            <input cFormControl id="validationTooltip01" required type="text" value="Mark" />
-            <c-form-feedback [valid]="true" tooltip>Looks good!</c-form-feedback>
-          </c-col>
-          <c-col class="position-relative" md="8">
-            <label cLabel for="validationTooltip02">Last name</label>
-            <input cFormControl id="validationTooltip02" required type="text" value="Otto" />
-            <c-form-feedback [valid]="true" tooltip>Looks good!</c-form-feedback>
-          </c-col>
-<!--          <c-col class="position-relative" md="4">-->
-<!--            <label cLabel for="validationTooltip02">Avatar</label>-->
-<!--            <input cFormControl id="" required type="text" value="Otto" />-->
-<!--            <c-form-feedback [valid]="true" tooltip>Looks good!</c-form-feedback>-->
-<!--          </c-col>-->
-
-          <c-col class="position-relative" md="8">
-            <label cLabel for="validationTooltipUsername">Tên người dùng</label>
-            <c-input-group class="has-validation">
-              <span cInputGroupText id="inputGroupPrependTooltip">@</span>
-              <input aria-describedby="inputGroupPrependTooltip"
-                     cFormControl
-                     id="validationTooltipUsername"
-                     required
-                     type="text"
-              />
-              <c-form-feedback [valid]="false" tooltip>Please choose a username.</c-form-feedback>
-            </c-input-group>
-          </c-col>
+          <c-row>
+            <c-col xs="8">
+              <c-col class="position-relative" xs="8" style="margin-right: 0 !important; margin-top: 10px !important;">
+                <label cLabel for="validationTooltip01">First name</label>
+                <input cFormControl id="validationTooltip01" required type="text" value="Mark"/>
+                <c-form-feedback [valid]="true" tooltip>Looks good!</c-form-feedback>
+              </c-col>
+              <c-col class="position-relative" xs=8 style="margin-right: 0 !important; margin-top: 10px !important;">
+                <label cLabel for="validationTooltip02">Last name</label>
+                <input cFormControl id="validationTooltip02" required type="text" value="Otto"/>
+                <c-form-feedback [valid]="true" tooltip>Looks good!</c-form-feedback>
+              </c-col>
+              <c-col class="position-relative" xs="8" style="margin-right: 0 !important; margin-top: 10px !important;">
+                <label cLabel for="validationTooltipUsername">Tên người dùng</label>
+                <c-input-group class="has-validation">
+                  <span cInputGroupText id="inputGroupPrependTooltip">@</span>
+                  <input aria-describedby="inputGroupPrependTooltip"
+                         cFormControl
+                         id="validationTooltipUsername"
+                         required
+                         type="text"
+                  />
+                  <c-form-feedback [valid]="false" tooltip>Please choose a username.</c-form-feedback>
+                </c-input-group>
+              </c-col>
+            </c-col>
+            <c-col xs="4">
+              <img cImg class="avatar" src="assets/img/avatars/1.jpg" width="100%"/>
+            </c-col>
+          </c-row>
           <c-col class="position-relative" md="6">
-            <label cLabel for="validationTooltip03">Ngày sinh</label>
-            <input cFormControl id="validationTooltip03" required type="text" />
+            <label cLabel>Ngày sinh</label>
+            <input cFormControl required type="text"/>
             <c-form-feedback [valid]="false" tooltip>Vui lòng nhập ngày sinh.</c-form-feedback>
           </c-col>
           <c-col class="position-relative" md="6">
             <label cLabel for="validationTooltip03">Số điện thoại</label>
-            <input cFormControl required type="text" />
+            <input cFormControl required type="text"/>
             <c-form-feedback [valid]="false" tooltip>Vui lòng số diện thoại.</c-form-feedback>
           </c-col>
           <c-col class="position-relative" md="12">
@@ -59,7 +58,7 @@
           </c-col>
           <c-col class="position-relative" xs="12">
             <c-form-check>
-              <input cFormCheckInput id="invalidCheckTooltip" name="invalidCheckTooltip" required type="checkbox" />
+              <input cFormCheckInput id="invalidCheckTooltip" name="invalidCheckTooltip" required type="checkbox"/>
               <label cFormCheckLabel for="invalidCheckTooltip">Agree to terms and conditions</label>
             </c-form-check>
             <c-form-feedback [valid]="false" tooltip>You must agree before submitting.</c-form-feedback>

@@ -1,5 +1,6 @@
 import { Component} from '@angular/core';
 import { cilPenAlt, cilSpreadsheet, cilTrash} from "@coreui/icons";
+import usersData from "./data";
 
 
 @Component({
@@ -8,5 +9,6 @@ import { cilPenAlt, cilSpreadsheet, cilTrash} from "@coreui/icons";
   styleUrls: ['./user-management-page.component.scss']
 })
 export class UserManagementPageComponent {
+  listUser = usersData
   icons = { cilSpreadsheet, cilPenAlt, cilTrash, };
 }

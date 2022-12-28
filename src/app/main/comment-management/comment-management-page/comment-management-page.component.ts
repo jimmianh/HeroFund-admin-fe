@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {cilPenAlt, cilSpreadsheet, cilTrash} from "@coreui/icons";
 
 @Component({
   selector: 'app-comment-management-page',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./comment-management-page.component.scss']
 })
 export class CommentManagementPageComponent {
-
+  icons = { cilSpreadsheet, cilPenAlt, cilTrash, };
 }

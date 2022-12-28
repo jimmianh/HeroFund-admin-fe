@@ -13,10 +13,10 @@
             <th scope="col" style="text-align: center">Thao tác</th>
           </tr>
           </thead>
-          <tbody>
+          <tbody *ngFor=" let item of listUser">
           <tr>
-            <th scope="row" style="text-align: center">1</th>
-            <td style="text-align: center">Mark</td>
+            <th scope="row" style="text-align: center">{{item.id + 1}}</th>
+            <td style="text-align: center">{{item.name}}</td>
             <td style="text-align: center">09870705759</td>
             <td style="text-align: center">Anhvhn@fpt.com.vn</td>
             <td style="text-align: center">Hoạt động</td>
