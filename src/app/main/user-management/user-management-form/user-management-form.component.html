@@ -40,20 +40,17 @@
           </c-row>
           <c-col class="position-relative" md="6">
             <label cLabel>Ngày sinh</label>
-            <input cFormControl required type="text"/>
+            <input cFormControl required type="date" id="birthday" name="birthday">
             <c-form-feedback [valid]="false" tooltip>Vui lòng nhập ngày sinh.</c-form-feedback>
           </c-col>
           <c-col class="position-relative" md="6">
-            <label cLabel for="validationTooltip03">Số điện thoại</label>
+            <label cLabel >Số điện thoại</label>
             <input cFormControl required type="text"/>
             <c-form-feedback [valid]="false" tooltip>Vui lòng số diện thoại.</c-form-feedback>
           </c-col>
           <c-col class="position-relative" md="12">
-            <label cLabel for="validationTooltip04">Địa chỉ</label>
-            <select cSelect id="validationTooltip04" required>
-              <option value="">Choose...</option>
-              <option value="1">...</option>
-            </select>
+            <label cLabel>Địa chỉ</label>
+            <input cFormControl required type="text"/>
             <c-form-feedback [valid]="false" tooltip>Please provide a valid State.</c-form-feedback>
           </c-col>
           <c-col class="position-relative" xs="12">

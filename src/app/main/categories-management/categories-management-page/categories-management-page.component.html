@@ -6,20 +6,14 @@
           <thead>
           <tr>
             <th scope="col" style="text-align: center">STT</th>
-            <th scope="col" style="text-align: center">Tên người dùng</th>
-            <th scope="col" style="text-align: center">Số điện thoại</th>
-            <th scope="col" style="text-align: center">Email</th>
-            <th scope="col" style="text-align: center">Trạng thái</th>
+            <th scope="col" style="text-align: center">Tên danh mục</th>
             <th scope="col" style="text-align: center">Thao tác</th>
           </tr>
           </thead>
           <tbody>
-          <tr>
-            <th scope="row" style="text-align: center">1</th>
-            <td style="text-align: center">Mark</td>
-            <td style="text-align: center">09870705759</td>
-            <td style="text-align: center">Anhvhn@fpt.com.vn</td>
-            <td style="text-align: center">Hoạt động</td>
+          <tr *ngFor="let item of listCategories">
+            <th scope="row" style="text-align: center">{{item.id + 1}}</th>
+            <td style="text-align: center">{{item.name}}</td>
             <td style="text-align: center">
               <button class="btn"><svg [cIcon]="icons.cilSpreadsheet" width="15" title="List Icon"></svg></button>
               <button class="btn"><svg [cIcon]="icons.cilPenAlt" width="15" title="Shield Icon"></svg></button>
