@@ -18,7 +18,9 @@ export class CategoriesManagementPageComponent implements OnInit{
   ngOnInit() : void {
     this.categoriesService.getCategoriesList().pipe(take(1)).subscribe(res => {
       console.log(res);
-      this.listCategories = res
+      if (res) {
+        this.listCategories = res;
+      }
     });
   }
 }
