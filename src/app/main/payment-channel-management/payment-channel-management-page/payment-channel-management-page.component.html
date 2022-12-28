@@ -6,24 +6,30 @@
           <thead>
           <tr>
             <th scope="col" style="text-align: center">STT</th>
-            <th scope="col" style="text-align: center">Tên người dùng</th>
-            <th scope="col" style="text-align: center">Số điện thoại</th>
-            <th scope="col" style="text-align: center">Email</th>
-            <th scope="col" style="text-align: center">Trạng thái</th>
+            <th scope="col" style="text-align: center">Name</th>
+            <th scope="col" style="text-align: center">ClientId</th>
+            <th scope="col" style="text-align: center">SecretId</th>
+            <th scope="col" style="text-align: center">PayerId</th>
             <th scope="col" style="text-align: center">Thao tác</th>
           </tr>
           </thead>
           <tbody>
-          <tr>
-            <th scope="row" style="text-align: center">1</th>
-            <td style="text-align: center">Mark</td>
-            <td style="text-align: center">09870705759</td>
-            <td style="text-align: center">Anhvhn@fpt.com.vn</td>
-            <td style="text-align: center">Hoạt động</td>
+          <tr *ngFor="let channel of listPaymentChannel; let i = index">
+            <th scope="row" style="text-align: center">{{i + 1}}</th>
+            <td style="text-align: center">{{channel.name}}</td>
+            <td style="text-align: center">{{channel.clientId}}</td>
+            <td style="text-align: center">{{channel.secretId}}</td>
+            <td style="text-align: center">{{channel.payerId}}</td>
             <td style="text-align: center">
-              <button class="btn"><svg [cIcon]="icons.cilSpreadsheet" width="15" title="List Icon"></svg></button>
-              <button class="btn"><svg [cIcon]="icons.cilPenAlt" width="15" title="Shield Icon"></svg></button>
-              <button class="btn"><svg [cIcon]="icons.cilTrash" width="15" title="Shield Icon"></svg></button>
+              <button class="btn">
+                <svg [cIcon]="icons.cilSpreadsheet" width="15" title="List Icon"></svg>
+              </button>
+              <button class="btn">
+                <svg [cIcon]="icons.cilPenAlt" width="15" title="Shield Icon"></svg>
+              </button>
+              <button class="btn">
+                <svg [cIcon]="icons.cilTrash" width="15" title="Shield Icon"></svg>
+              </button>
             </td>
           </tr>
           </tbody>

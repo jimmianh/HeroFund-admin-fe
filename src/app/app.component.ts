@@ -4,6 +4,7 @@ import { Router, NavigationEnd } from '@angular/router';
 import { IconSetService } from '@coreui/icons-angular';
 import { iconSubset } from './icons/icon-subset';
 import { Title } from '@angular/platform-browser';
+import {environment} from "../environments/environment";
 
 @Component({
   selector: 'app-root',
@@ -11,7 +12,7 @@ import { Title } from '@angular/platform-browser';
 })
 export class AppComponent implements OnInit {
   title = 'Hero fund admin';
-
+  baseUrl = "";
   constructor(
     private router: Router,
     private titleService: Title,
@@ -20,6 +21,8 @@ export class AppComponent implements OnInit {
     titleService.setTitle(this.title);
     // iconSet singleton
     iconSetService.icons = { ...iconSubset };
+    this.baseUrl = environment.baseUrl
+
   }
 
   ngOnInit(): void {
