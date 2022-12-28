@@ -5,7 +5,8 @@ import { CategoriesManagementRoutingModule } from './categories-management-routi
 import { CategoriesManagementPageComponent } from './categories-management-page/categories-management-page.component';
 import { CategoriesManagementFormComponent } from './categories-management-form/categories-management-form.component';
 import {IconModule} from "@coreui/icons-angular";
-import {CardModule, GridModule, TableModule} from "@coreui/angular";
+import {ButtonModule, CardModule, FormModule, GridModule, TableModule} from "@coreui/angular";
+import {HttpClientModule} from "@angular/common/http";
 
 
 @NgModule({
@@ -19,7 +20,10 @@ import {CardModule, GridModule, TableModule} from "@coreui/angular";
     IconModule,
     TableModule,
     CardModule,
-    GridModule
+    GridModule,
+    FormModule,
+    ButtonModule,
+    HttpClientModule
   ]
 })
 export class CategoriesManagementModule { }
