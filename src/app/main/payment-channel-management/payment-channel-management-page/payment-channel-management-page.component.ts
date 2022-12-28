@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {cilPenAlt, cilSpreadsheet, cilTrash} from "@coreui/icons";
-import {PaymentChannelService} from "../../../service/payment-channel.service";
+import {PaymentChannelService} from "../service/payment-channel.service";
 import {take} from "rxjs";
 import {PaymentChannel} from "../../../entity/PaymentChannel";
 import {StringUtil} from "../../../util/StringUtil";
